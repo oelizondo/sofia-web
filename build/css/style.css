@@ -86,6 +86,7 @@ body {
 
 @media (max-width: 800px) {
   .landing-content {
+    height: auto;
     padding-top: 50px; }
   .installation {
     height: auto;
