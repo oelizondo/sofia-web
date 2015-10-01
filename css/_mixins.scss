@@ -1,0 +1,22 @@
+@mixin justify-center {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+@mixin flow-column {
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
+@mixin rotate {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@mixin pre-style {
+    pre { max-width: 400px; margin: 0 auto; }
+}

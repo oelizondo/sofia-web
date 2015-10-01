@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.landing-title {
+  background: linear-gradient(400deg, #00BCD4, #01579B);
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .landing-title .landing-show {
+    text-align: center; }
+  .landing-title .title {
+    font-size: 30px;
+    letter-spacing: 2px; }
+    .landing-title .title span {
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px; }
+  .landing-title .subtitle {
+    letter-spacing: 2px; }
+  .landing-title .color {
+    height: 100vh; }
+
+.landing-content {
+  padding: 0 20px;
+  height: 70vh;
+  background: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .landing-content .landing-content-title {
+    text-align: center; }
+    .landing-content .landing-content-title pre {
+      max-width: 400px;
+      margin: 0 auto; }
+    .landing-content .landing-content-title p {
+      margin: 0 auto;
+      max-width: 400px; }
+  .landing-content .landing-content-icons {
+    text-align: center;
+    transition: 0.2s; }
+    .landing-content .landing-content-icons pre {
+      max-width: 400px;
+      margin: 0 auto; }
+    .landing-content .landing-content-icons span {
+      color: #01579B;
+      font-size: 70px; }
+      .landing-content .landing-content-icons span:hover {
+        color: #00BCD4;
+        transition: 0.2s; }
+
+.installation {
+  padding: 0 0 60px 0;
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+  height: 50vh;
+  display: flex;
+  text-align: center;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column; }
+  .installation a {
+    margin-top: 60px; }
+  .installation pre {
+    width: 600px;
+    margin: 0 auto; }
+
+.powered-by {
+  color: black;
+  background: #f5f5f5;
+  height: 4vh;
+  text-align: center;
+  font-family: 'Lato', sans-serif; }
+  .powered-by a {
+    font-family: 'Dancing Script', cursive; }
+
+@media (max-width: 800px) {
+  .landing-content {
+    padding-top: 50px; }
+  .installation {
+    height: auto;
+    margin-top: 30px;
+    max-width: 100%; }
+    .installation pre {
+      display: none; }
+    .installation h3 {
+      display: none; } }
