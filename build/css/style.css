@@ -2,11 +2,13 @@ body {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
 .landing-title {
   background: linear-gradient(400deg, #00BCD4, #01579B);
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  background-attachment: fixed;
   color: white;
   height: 100vh;
   display: flex;
