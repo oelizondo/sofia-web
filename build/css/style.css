@@ -21,6 +21,7 @@ a {
   .landing-title .landing-show {
     text-align: center; }
   .landing-title .title {
+    margin-top: 50px;
     font-size: 30px;
     letter-spacing: 2px; }
     .landing-title .title span {
@@ -28,6 +29,10 @@ a {
       font-size: 40px; }
   .landing-title .subtitle {
     letter-spacing: 2px; }
+  .landing-title .ribbon {
+    margin-top: 30px;
+    height: 100px;
+    width: auto; }
   .landing-title .color {
     height: 100vh; }
 
