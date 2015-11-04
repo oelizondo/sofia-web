@@ -14,35 +14,31 @@ a { text-decoration: none; }
     font-weight: 100;
     color: white;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    @include flow-column;
-    @include justify-center;
-
-
-    .landing-show {
-        text-align: center;
-    }
-
+    background-attachment: fixed;
     .title {
         margin-top: 50px;
         font-size: 30px;
         letter-spacing: 2px;
         span { font-family: 'Dancing Script', cursive; font-size: 40px; }
+        position: absolute;
+        left: 42%;
+        top: 35%;
     }
 
     .subtitle {
         letter-spacing: 2px;
+        position: absolute;
+        left: 40%;
+        top: 50%;
     }
 
     .ribbon {
         margin-top: 30px;
         height: 100px;
         width: auto;
-    }
-
-    .color {
-        height: 100vh;
+        left: 44%;
+        top: 55%; 
+        position: absolute;
     }
 }
 
@@ -70,10 +66,10 @@ a { text-decoration: none; }
         text-align: center;
         transition: 0.2s;
         @include pre-style;
-
         span {
             color: #01579B;
             font-size: 70px;
+            transition: 0.2s;
             &:hover { color: #00BCD4; transition: 0.2s; }
         }
     }
@@ -101,12 +97,22 @@ a { text-decoration: none; }
     a { font-family: 'Dancing Script', cursive; }
 }
 
-@media ( max-width: 800px ) {
+@media ( max-width: 900px ) {
 
     .landing-content {
         height: auto;
         padding-top: 50px;
     }
+
+        .title { 
+            left: 27%;
+        }
+        .subtitle {
+            left: 21%;
+        }
+        .ribbon {
+            left: 34%;
+        }
 
     .installation {
         height: auto;

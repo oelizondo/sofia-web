@@ -11,30 +11,29 @@ a {
   font-weight: 100;
   color: white;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-justify-content: center;
-  justify-content: center; }
-  .landing-title .landing-show {
-    text-align: center; }
+  background-attachment: fixed; }
   .landing-title .title {
     margin-top: 50px;
     font-size: 30px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    position: absolute;
+    left: 42%;
+    top: 35%; }
     .landing-title .title span {
       font-family: 'Dancing Script', cursive;
       font-size: 40px; }
   .landing-title .subtitle {
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    position: absolute;
+    left: 40%;
+    top: 50%; }
   .landing-title .ribbon {
     margin-top: 30px;
     height: 100px;
-    width: auto; }
-  .landing-title .color {
-    height: 100vh; }
+    width: auto;
+    left: 44%;
+    top: 55%;
+    position: absolute; }
 
 .landing-content {
   padding: 0 20px;
@@ -61,7 +60,8 @@ a {
       margin: 0 auto; }
     .landing-content .landing-content-icons span {
       color: #01579B;
-      font-size: 70px; }
+      font-size: 70px;
+      transition: 0.2s; }
       .landing-content .landing-content-icons span:hover {
         color: #00BCD4;
         transition: 0.2s; }
@@ -91,10 +91,16 @@ a {
   .powered-by a {
     font-family: 'Dancing Script', cursive; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .landing-content {
     height: auto;
     padding-top: 50px; }
+  .title {
+    left: 27%; }
+  .subtitle {
+    left: 21%; }
+  .ribbon {
+    left: 34%; }
   .installation {
     height: auto;
     margin-top: 30px;
