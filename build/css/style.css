@@ -6,24 +6,24 @@ a {
   text-decoration: none; }
 
 .landing-title {
-  background: linear-gradient(400deg, #00BCD4, #01579B);
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
   -webkit-justify-content: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(400deg, #00BCD4, #01579B);
+  color: white;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  height: 100vh; }
   .landing-title .landing-show {
     text-align: center; }
   .landing-title .title {
-    margin-top: 50px;
     font-size: 30px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin-top: 50px; }
     .landing-title .title span {
       font-family: 'Dancing Script', cursive;
       font-size: 40px; }
@@ -67,15 +67,15 @@ a {
         transition: 0.2s; }
 
 .installation {
-  padding: 0 0 60px 0;
-  font-family: 'Lato', sans-serif;
-  background: #fff;
-  height: 50vh;
-  display: flex;
-  text-align: center;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
-  flex-flow: column; }
+  flex-flow: column;
+  background: #fff;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  height: 50vh;
+  padding: 0 0 60px 0;
+  text-align: center; }
   .installation a {
     margin-top: 60px; }
   .installation pre {
@@ -83,11 +83,11 @@ a {
     margin: 0 auto; }
 
 .powered-by {
-  color: black;
   background: #f5f5f5;
+  color: black;
+  font-family: 'Lato', sans-serif;
   height: 4vh;
-  text-align: center;
-  font-family: 'Lato', sans-serif; }
+  text-align: center; }
   .powered-by a {
     font-family: 'Dancing Script', cursive; }
 
@@ -95,11 +95,10 @@ a {
   .landing-content {
     height: auto;
     padding-top: 50px; }
-  .installation {
-    height: auto;
-    margin-top: 30px;
-    max-width: 100%; }
-    .installation pre {
-      display: none; }
-    .installation h3 {
-      display: none; } }
+  h3 {
+    display: none; }
+  height: auto;
+  margin-top: 30px;
+  max-width: 100%;
+  pre {
+    display: none; } }
