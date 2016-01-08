@@ -1,104 +1,84 @@
+/* General Rules */
+.lato {
+  font-family: 'Lato', sans-serif; }
+
+.hundred {
+  height: 100vh; }
+
+/* Structure */
 body {
   margin: 0;
   padding: 0; }
 
-a {
-  text-decoration: none; }
-
-.landing-title {
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-justify-content: center;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(400deg, #00BCD4, #01579B);
-  color: white;
-  display: flex;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
+.content {
   height: 100vh; }
-  .landing-title .landing-show {
-    text-align: center; }
-  .landing-title .title {
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin-top: 50px; }
-    .landing-title .title span {
-      font-family: 'Dancing Script', cursive;
-      font-size: 40px; }
-  .landing-title .subtitle {
-    letter-spacing: 2px; }
-  .landing-title .ribbon {
+
+.documentation {
+  padding-top: 35px; }
+
+.sidebar {
+  color: white;
+  background: linear-gradient(400deg, #00BCD4, #01579B);
+  box-shadow: 2px 2px 2px #c9c9c9;
+  position: fixed;
+  padding: 35px 0 0 0;
+  height: 100%; }
+  .sidebar h2 {
     margin-top: 30px;
-    height: 100px;
-    width: auto; }
-  .landing-title .color {
-    height: 100vh; }
-
-.landing-content {
-  padding: 0 20px;
-  height: 70vh;
-  background: #FFF;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-  .landing-content .landing-content-title {
+    margin-bottom: 70px;
+    font-family: 'Tangerine', cursive;
+    letter-spacing: 3px;
     text-align: center; }
-    .landing-content .landing-content-title pre {
-      max-width: 400px;
-      margin: 0 auto; }
-    .landing-content .landing-content-title p {
-      margin: 0 auto;
-      max-width: 400px; }
-  .landing-content .landing-content-icons {
-    text-align: center;
-    transition: 0.2s; }
-    .landing-content .landing-content-icons pre {
-      max-width: 400px;
-      margin: 0 auto; }
-    .landing-content .landing-content-icons span {
-      color: #01579B;
-      font-size: 70px; }
-      .landing-content .landing-content-icons span:hover {
-        color: #00BCD4;
+  .sidebar .ribbon {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 65px;
+    width: 65px;
+    margin-bottom: 50px; }
+  .sidebar .navigation {
+    text-align: center; }
+    .sidebar .navigation ul {
+      margin: 0;
+      list-style: none; }
+      .sidebar .navigation ul li a {
+        text-decoration: none;
+        color: white;
         transition: 0.2s; }
+        .sidebar .navigation ul li a:hover {
+          color: #C9C9C9;
+          transition: 0.2s; }
 
-.installation {
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  background: #fff;
-  display: flex;
-  font-family: 'Lato', sans-serif;
-  height: 50vh;
-  padding: 0 0 60px 0;
-  text-align: center; }
-  .installation a {
-    margin-top: 60px; }
-  .installation pre {
-    width: 600px;
-    margin: 0 auto; }
-
-.powered-by {
-  background: #f5f5f5;
-  color: black;
-  font-family: 'Lato', sans-serif;
-  height: 4vh;
-  text-align: center; }
-  .powered-by a {
-    font-family: 'Dancing Script', cursive; }
-
-@media (max-width: 800px) {
-  .landing-content {
-    height: auto;
-    padding-top: 50px; }
-  h3 {
-    display: none; }
+.documentation {
   height: auto;
-  margin-top: 30px;
-  max-width: 100%;
-  pre {
-    display: none; } }
+  overflow-y: scroll; }
+  .documentation .installation pre {
+    max-width: 615px;
+    font-size: 12px; }
+    .documentation .installation pre code {
+      max-width: 800px; }
+  .documentation .getting-started pre {
+    max-width: 650px; }
+    .documentation .getting-started pre code {
+      max-width: auto; }
+  .documentation .structure pre {
+    max-width: 650px; }
+    .documentation .structure pre code {
+      max-width: 650px; }
+  .documentation .running pre {
+    max-width: 120px; }
+    .documentation .running pre code {
+      max-width: 650px; }
+  .documentation .generator pre {
+    max-width: 250px; }
+    .documentation .generator pre code {
+      max-width: 650px; }
+  .documentation .landing pre {
+    max-width: 278px; }
+  .documentation .secondary-structure pre {
+    max-width: 400px; }
+  .documentation .info {
+    display: flex;
+    flex-wrap: wrap; }
+    .documentation .info pre {
+      margin-right: 15px; }
